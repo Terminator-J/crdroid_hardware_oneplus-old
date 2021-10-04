@@ -54,7 +54,7 @@
     <integer-array name="vibrator_call_strength_preference_array">
         <item>500</item>
         <item>116</item>
-        <item>2088</item>
+        <item>3596</item>
     </integer-array>
     <integer name="vibrator_call_strength_preference_interval">100</integer>
 
@@ -62,13 +62,13 @@
     <integer-array name="vibrator_notif_strength_preference_array">
         <item>500</item>
         <item>116</item>
-        <item>2088</item>
+        <item>3596</item>
     </integer-array>
     <integer name="vibrator_notif_strength_preference_interval">100</integer>
 
     <!-- Vibration test pattern (1, 2) -->
     <integer-array name="test_vibration_pattern">
         <item>0</item>
-        <item>250</item>
+        <item>150</item>
     </integer-array>
 </resources>

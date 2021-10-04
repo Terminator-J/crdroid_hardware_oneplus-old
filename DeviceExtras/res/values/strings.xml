@@ -17,7 +17,7 @@
 -->
 <resources>
     <!-- Device Extras -->
-    <string name="device_title">Device Extras</string>
+    <string name="device_title">OnePlus Settings</string>
     <string name="device_summary">Adjust device specific settings</string>
 	
     <!-- Alert slider -->
@@ -59,21 +59,21 @@
 
     <!-- Display -->
     <string name="display_title">Display</string>
-    <string name="dc_mode_title">DC-dimming</string>
-    <string name="dc_mode_summary">Dim backlight by lowering DC current draw</string>
+    <string name="dc_mode_title">DC dimming mode</string>
+    <string name="dc_mode_summary">Dim display by lowering current instead of PWM duty cyle</string>
     <string name="hbm_mode_title">High brightness mode</string>
     <string name="hbm_mode_summary">Enable peak luminance</string>
-    <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
+    <string name="hbm_mode_warning">Long-term usage of high brightness mode may damage your display</string>
     <string name="auto_hbm_title">Automatic high brightness mode</string>
-    <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
+    <string name="auto_hbm_summary">Enable peak luminance based on ambient light</string>
     <string name="auto_hbm_threshold_title"></string>
     <string name="auto_hbm_threshold_summary">threshold (lux)</string>
-    <string name="panel_modes_title">Panel modes</string>
-    <string name="panel_modes_summary">Modes for panel color correction</string>
+    <string name="panel_modes_title">Panel color modes</string>
+    <string name="panel_modes_summary">Calibrated display panel color gamuts</string>
     <string name="off_mode_title">Off</string>
-    <string name="srgb_mode_title">sRGB mode</string>
-    <string name="dci_mode_title">DCI-P3 wide colour gamut mode</string>
-    <string name="wide_mode_title">Wide colour mode</string>
+    <string name="srgb_mode_title">sRGB color gamut mode</string>
+    <string name="dci_mode_title">DCI-P3 wide color gamut mode</string>
+    <string name="wide_mode_title">Wide color gamut mode</string>
 
      <!-- FPS Info -->
     <string name="fps_title">Measured FPS</string>
@@ -122,7 +122,7 @@
     <!-- Kcal -->
     <string name="device_kcal_title">Color calibration</string>
     <string name="kcal_enabled_summary">Calibrate display via KCAL</string>
-    <string name="kcal_warning">Ensure sRGB color mode is enabled for optimal performance!</string>
+    <string name="kcal_warning">Use the widest available color gamut for optimal results.</string>
     <string name="advanced_settings_kcal">Display color calibration</string>
     <string name="cat_colormanagement">Color settings</string>
     <string name="cat_calibration">Display calibration</string>
@@ -188,4 +188,5 @@
     <string name="vib_call_strength_summary">Define the strength of the vibrator during an incoming call</string>
     <string name="vib_notif_strength_title">Notification strength</string>
     <string name="vib_notif_strength_summary">Define the strength of the vibrator during an incoming notification</string>
+    <string name="vibration_warning">High vibrator strength may damage your vibration motor</string>
 </resources>

@@ -25,7 +25,7 @@
 
     <!-- Ear gain sysfs node path -->
      <string name="node_ear_gain_preference">/sys/kernel/sound_control/earpiece_gain</string>
-   
+
     <!-- High Brightnes sysfs node path -->
     <string name="node_hbm_mode_switch">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm</string>
 
@@ -49,7 +49,7 @@
 
     <!-- System vibration sysfs node path -->
     <string name="node_vibrator_strength_preference">/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_mv_user</string>
-	
+
     <!-- Touchboost sysfs node path -->
     <string name="node_touch_boost_switch">/sys/module/msm_performance/parameters/touchboost</string>
 

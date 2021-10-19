@@ -54,7 +54,7 @@ import java.util.Arrays;
 
 import org.lineageos.device.DeviceExtras.Constants;
 // import org.lineageos.device.DeviceExtras.doze.DozeSettingsActivity;
-import org.lineageos.device.DeviceExtras.kcal.KCalSettingsActivity;
+// import org.lineageos.device.DeviceExtras.kcal.KCalSettingsActivity;
 import org.lineageos.device.DeviceExtras.FileUtils;
 import org.lineageos.device.DeviceExtras.R;
 import org.lineageos.device.DeviceExtras.*;
@@ -172,21 +172,23 @@ public class DeviceExtras extends PreferenceFragment
 */
 
         // Kcal Activity
-        mKcal = findPreference(KEY_KCAL);
-        mKcal.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
-            startActivity(intent);
-            return true;
-        });
+/*        mKcal = findPreference(KEY_KCAL);
+*         mKcal.setOnPreferenceClickListener(preference -> {
+*             Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
+*             startActivity(intent);
+*             return true;
+*         });
+*/
 
         // Panel Modes
-        display = display | isFeatureSupported(context, R.bool.config_deviceSupportsPanelModes);
-        if (isFeatureSupported(context, R.bool.config_deviceSupportsPanelModes)) {
-            pm.setComponentEnabledSetting (new ComponentName(context, PanelModeTileService.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-        }
-        else {
-            findPreference(KEY_PANEL_MODES).setVisible(false);
-        }
+/*        display = display | isFeatureSupported(context, R.bool.config_deviceSupportsPanelModes);
+*         if (isFeatureSupported(context, R.bool.config_deviceSupportsPanelModes)) {
+*             pm.setComponentEnabledSetting (new ComponentName(context, PanelModeTileService.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+*         }
+*         else {
+*             findPreference(KEY_PANEL_MODES).setVisible(false);
+*         }
+*/
 
         // DC-Dimming
         display = display | isFeatureSupported(context, R.bool.config_deviceSupportsDCdimming);
@@ -254,17 +256,18 @@ public class DeviceExtras extends PreferenceFragment
         }
 
         // Game Mode
-        if (isFeatureSupported(context, R.bool.config_deviceSupportsGameMode)) {
-            mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
-            mGameModeSwitch.setEnabled(GameModeSwitch.isSupported(this.getContext()));
-            mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
-            mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
-
-            pm.setComponentEnabledSetting (new ComponentName(context, GameModeTileService.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-        }
-        else {
-            getPreferenceScreen().removePreference((Preference) findPreference(KEY_CATEGORY_TOUCHSCREEN));
-        }
+/*        if (isFeatureSupported(context, R.bool.config_deviceSupportsGameMode)) {
+*             mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
+*             mGameModeSwitch.setEnabled(GameModeSwitch.isSupported(this.getContext()));
+*             mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
+*             mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
+*
+*             pm.setComponentEnabledSetting (new ComponentName(context, GameModeTileService.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+*         }
+*         else {
+*             getPreferenceScreen().removePreference((Preference) findPreference(KEY_CATEGORY_TOUCHSCREEN));
+*         }
+*/
 
         boolean speakerSection = false;
 

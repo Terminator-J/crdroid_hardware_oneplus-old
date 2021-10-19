@@ -37,7 +37,7 @@ public class Startup extends BroadcastReceiver {
         DeviceExtras.restoreSliderStates(context);
         EarGainPreference.restore(context);
         // org.lineageos.device.DeviceExtras.doze.DozeUtils.checkDozeService(context);
-        org.lineageos.device.DeviceExtras.kcal.KCalSettings.restore(context);
+        // org.lineageos.device.DeviceExtras.kcal.KCalSettings.restore(context);
         MicGainPreference.restore(context);
         VibratorCallStrengthPreference.restore(context);
         VibratorNotifStrengthPreference.restore(context);
@@ -49,11 +49,12 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
         restore(DCModeSwitch.getFile(context), enabled);
                }
-        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_DCI_SWITCH, false);
-        if (enabled) {
-        mHBM = false;
-        restore(DCIModeSwitch.getFile(context), enabled);
-               }
+/*        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_DCI_SWITCH, false);
+*         if (enabled) {
+*         mHBM = false;
+*         restore(DCIModeSwitch.getFile(context), enabled);
+*                }
+*/
         enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_HBM_SWITCH, false);
         if (enabled) {
         restore(HBMModeSwitch.getFile(context), enabled);
@@ -62,15 +63,17 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
                }
-        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_GAME_SWITCH, false);
-        if (enabled) {
-            restore(GameModeSwitch.getFile(context), enabled);
-               }
-        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_SRGB_SWITCH, false);
-        if (enabled) {
-        mHBM = false;
-        restore(SRGBModeSwitch.getFile(context), enabled);
-               }
+/*        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_GAME_SWITCH, false);
+*         if (enabled) {
+*             restore(GameModeSwitch.getFile(context), enabled);
+*                }
+*/
+/*        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_SRGB_SWITCH, false);
+*         if (enabled) {
+*         mHBM = false;
+*         restore(SRGBModeSwitch.getFile(context), enabled);
+*                }
+*/
         enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_TOUCH_BOOST_SWITCH, false);
         if (enabled) {
         restore(TouchboostModeSwitch.getFile(context), enabled);
@@ -79,11 +82,12 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
         restore(USB2FastChargeModeSwitch.getFile(context), enabled);
                }
-        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_WIDE_SWITCH, false);
-        if (enabled) {
-        mHBM = false;
-        restore(WideModeSwitch.getFile(context), enabled);
-        }
+/*        enabled = sharedPrefs.getBoolean(DeviceExtras.KEY_WIDE_SWITCH, false);
+*         if (enabled) {
+*         mHBM = false;
+*         restore(WideModeSwitch.getFile(context), enabled);
+*             }
+*/
     }
 
     private void restore(String file, boolean enabled) {

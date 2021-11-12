@@ -428,6 +428,15 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
     }
 }
 
+Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
+    this->isCancelled = 0;
+    return Void();
+}
+
 } // namespace implementation
 }  // namespace V2_3
 }  // namespace fingerprint

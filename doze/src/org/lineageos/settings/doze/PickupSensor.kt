@@ -34,14 +34,7 @@ class PickupSensor(private val context: Context, sensorType: String) : SensorEve
         }
         entryTimestamp = SystemClock.elapsedRealtime()
         if (event.values[0] == 1.0f) {
-            if (Utils.isPickUpSetToWake(context)) {
-                wakeLock.acquire(WAKELOCK_TIMEOUT_MS)
-                powerManager.wakeUpWithProximityCheck(
-                    SystemClock.uptimeMillis(), PowerManager.WAKE_REASON_GESTURE, TAG
-                )
-            } else {
-                Utils.launchDozePulse(context)
-            }
+            Utils.launchDozePulse(context)
         }
     }
 

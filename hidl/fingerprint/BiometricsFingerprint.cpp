@@ -433,6 +433,7 @@ Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
 }
 
 Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
+    this->isCancelled = 0;
     return Void();
 }
 

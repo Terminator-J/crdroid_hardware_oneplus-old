@@ -34,8 +34,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.internal.evolution.hardware.LineageHardwareManager;
-import com.android.internal.evolution.hardware.TouchscreenGesture;
+import lineageos.hardware.LineageHardwareManager;
+import lineageos.hardware.TouchscreenGesture;
 
 import org.lineageos.oneplus.DeviceExtras.R;
 

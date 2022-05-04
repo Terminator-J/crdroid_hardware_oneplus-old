@@ -45,6 +45,8 @@ import android.util.SparseIntArray;
 import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
+import org.lineageos.internal.util.FileUtils;
+import lineageos.providers.LineageSettings;
 
 public class KeyHandler implements DeviceKeyHandler {
 
@@ -236,7 +238,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private void launchCamera() {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-        final Intent intent = new Intent(android.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
+        final Intent intent = new Intent(lineageos.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
         mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT,
                 Manifest.permission.STATUS_BAR_SERVICE);
         doHapticFeedback();
@@ -325,7 +327,7 @@ public class KeyHandler implements DeviceKeyHandler {
         }
 
         final boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
+                LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
         if (enabled) {
             mVibrator.vibrate(VibrationEffect.get(VibrationEffect.EFFECT_CLICK));
         }

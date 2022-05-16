@@ -70,7 +70,7 @@ public class FPSInfoService extends Service {
     private static final int POSITION_BOTTOM_CENTER = 4;
     private static final int POSITION_BOTTOM_RIGHT = 5;
 
-    private static final int[] colorArray = {Color.GREEN, Color.RED, Color.BLUE, Color.YELLOW, Color.BLACK};
+    private static final int[] colorArray = {Color.GREEN, Color.RED, Color.BLUE, Color.YELLOW, Color.BLACK, Color.WHITE};
     private static final int[] sizeArray = {16, 18, 20, 22, 24};
 
     private IDreamManager mDreamManager;

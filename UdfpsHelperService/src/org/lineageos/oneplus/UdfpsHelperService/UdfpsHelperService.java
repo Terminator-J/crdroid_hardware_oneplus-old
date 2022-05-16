@@ -22,21 +22,17 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.FileUtils;
 import android.os.IBinder;
 import android.util.Log;
+
+import java.io.IOException;
 
 public class UdfpsHelperService extends Service {
     private static final String TAG = "UdfpsHelperService";
     private static final boolean DEBUG = false;
 
     private static final String OP_DISPLAY_NOTIFY_PRESS = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress";
-
-    public static String getFile() {
-        if (FileUtils.fileWritable(OP_DISPLAY_NOTIFY_PRESS)) {
-            return OP_DISPLAY_NOTIFY_PRESS;
-        }
-        return null;
-    }
 
     @Override
     public void onCreate() {
@@ -70,7 +66,11 @@ public class UdfpsHelperService extends Service {
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
                 if (DEBUG) Log.d(TAG, "Display off");
-                FileUtils.writeValue(getFile(), "0");
+        try {
+            FileUtils.stringToFile(OP_DISPLAY_NOTIFY_PRESS, "0");
+        } catch (IOException e) {
+            if (DEBUG) Log.e(TAG, "Failed to write to " + OP_DISPLAY_NOTIFY_PRESS, e);
+        }
             }
         }
     };

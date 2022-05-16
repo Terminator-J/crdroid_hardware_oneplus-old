@@ -124,6 +124,7 @@
         <item>@string/fps_info_color_blue</item>
         <item>@string/fps_info_color_yellow</item>
         <item>@string/fps_info_color_black</item>
+        <item>@string/fps_info_color_white</item>
         <item>@string/fps_info_color_accent</item>
     </string-array>
 
@@ -134,6 +135,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <string-array name="fps_info_position_entries" translatable="false">

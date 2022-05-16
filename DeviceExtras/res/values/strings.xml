@@ -95,6 +95,7 @@
     <string name="fps_info_color_blue">Blue</string>
     <string name="fps_info_color_yellow">Yellow</string>
     <string name="fps_info_color_black">Black</string>
+    <string name="fps_info_color_white">White</string>
     <string name="fps_info_color_accent">Follow System</string>
     <string name="fps_info_position_title">Overlay position</string>
     <string name="fps_info_position_top_left">Top left</string>

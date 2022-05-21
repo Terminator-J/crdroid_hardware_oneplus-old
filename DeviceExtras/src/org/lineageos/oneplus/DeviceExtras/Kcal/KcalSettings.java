@@ -61,7 +61,6 @@ public class KcalSettings extends PreferenceFragment
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
         addPreferencesFromResource(R.xml.kcal_settings);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
 
         Context context = this.getContext();
 

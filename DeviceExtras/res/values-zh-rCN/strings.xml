@@ -127,6 +127,8 @@
     <string name="category_power">电源</string>
     <string name="powershare_mode_title">无线电力共享</string>
     <string name="powershare_mode_summary">启用反向无线充电</string>
+    <string name="wireless_charging_mode_title">无线充电</string>
+    <string name="wireless_charging_mode_summary">启用无线充电</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">扬声器 &amp; 麦克风</string>
     <string name="ear_gain_title">耳机增益 (通话)</string>

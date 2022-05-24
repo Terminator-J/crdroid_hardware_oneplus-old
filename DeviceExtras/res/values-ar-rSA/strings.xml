@@ -127,6 +127,8 @@
     <string name="category_power">الطاقة</string>
     <string name="powershare_mode_title">مشاركة الشحن اللاسلكي</string>
     <string name="powershare_mode_summary">تمكين الشحن اللاسلكي العكسي</string>
+    <string name="wireless_charging_mode_title">الشحن اللاسلكي</string>
+    <string name="wireless_charging_mode_summary">تمكين الشحن اللاسلكي</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">مكبرات الصوت والميكروفون</string>
     <string name="ear_gain_title">زيادة سماعة الأذن (المكالمات)</string>

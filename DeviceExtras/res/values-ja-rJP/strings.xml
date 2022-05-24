@@ -127,6 +127,8 @@
     <string name="category_power">電源</string>
     <string name="powershare_mode_title">ワイヤレス PowerShare</string>
     <string name="powershare_mode_summary">リバースワイヤレス充電を有効にする</string>
+    <string name="wireless_charging_mode_title">ワイヤレス充電</string>
+    <string name="wireless_charging_mode_summary">ワイヤレス充電を有効にする</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">スピーカーとマイク</string>
     <string name="ear_gain_title">イヤホンゲイン</string>

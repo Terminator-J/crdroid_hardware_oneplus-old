@@ -127,6 +127,8 @@
     <string name="category_power">Güç</string>
     <string name="powershare_mode_title">Kablosuz güç paylaşımı</string>
     <string name="powershare_mode_summary">Ters kablosuz şarjı etkinleştir</string>
+    <string name="wireless_charging_mode_title">Kablosuz şarj</string>
+    <string name="wireless_charging_mode_summary">Kablosuz şarjı etkinleştir</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">Hoparlör &amp; Mikrofon</string>
     <string name="ear_gain_title">Kulaklık yükseltme (Aramalarda)</string>

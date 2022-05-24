@@ -127,6 +127,8 @@
     <string name="category_power">Matikan Daya</string>
     <string name="powershare_mode_title">PowerShare Nirkabel</string>
     <string name="powershare_mode_summary">Aktifkan pengisian nirkabel terbalik</string>
+    <string name="wireless_charging_mode_title">Pengisian nirkabel</string>
+    <string name="wireless_charging_mode_summary">Aktifkan pengisian nirkabel</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">Speaker &amp; Mikrofon</string>
     <string name="ear_gain_title">Peningkatan lubang suara (Telepon)</string>

@@ -127,6 +127,8 @@
     <string name="category_power">Питание</string>
     <string name="powershare_mode_title">Беспроводной PowerShare</string>
     <string name="powershare_mode_summary">Включить обратную беспроводную зарядку</string>
+    <string name="wireless_charging_mode_title">Беспроводная зарядка</string>
+    <string name="wireless_charging_mode_summary">Включить беспроводную зарядку</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">Динамик &amp; Микрофон</string>
     <string name="ear_gain_title">Усиление динамика (Вызовы)</string>

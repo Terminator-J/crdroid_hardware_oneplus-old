@@ -127,6 +127,8 @@
     <string name="category_power">Napájanie</string>
     <string name="powershare_mode_title">Bezdrôtové nabíjanie PowerShare</string>
     <string name="powershare_mode_summary">Povoliť spätné bezdrôtové nabíjanie</string>
+    <string name="wireless_charging_mode_title">Bezdrôtové nabíjanie</string>
+    <string name="wireless_charging_mode_summary">Povoliť bezdrôtové nabíjanie</string>
     <!-- Speaker & Microphone -->
     <string name="category_speaker">Reproduktor &amp; mikrofón</string>
     <string name="ear_gain_title">Zisk zo slúchadla (hovory)</string>

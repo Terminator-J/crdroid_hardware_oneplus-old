@@ -18,7 +18,7 @@
     <!-- Device Extras -->
     <string name="device_extras_title">Device Extras</string>
     <string name="device_summary">Adjust device specific settings</string>
-	
+
     <!-- Alert slider -->
     <string name="notification_slider_category_title">Alert slider</string>
     <string name="notification_slider_title">Alert slider settings</string>
@@ -193,7 +193,7 @@
     <string name="tp_edge_limit_mode_summary">Disable the touchpanels edge limit</string>
 
     <!-- USB -->
-    <string name="usb_title">USB</string> 
+    <string name="usb_title">USB</string>
     <string name="usb2_fc_title">USB 2.0 fast charge</string>
     <string name="usb2_fc_summary">Force fast charging of up to 900mA in USB 2.0 mode</string>
     <string name="otg_title">USB-OTG</string>

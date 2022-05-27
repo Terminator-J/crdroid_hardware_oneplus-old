@@ -63,13 +63,13 @@
 
     <!-- Auto High Brightness sysfs node path -->
     <string name="node_auto_hbm_service">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm</string>
- 
+
     <!-- DC-dimming sysfs node path -->
     <string name="node_dc_mode_switch">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en</string>
 
     <!-- Measuered FPS sysfs node path -->
     <string name="node_fps_info_service">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps</string>
-    
+
     <!-- PowerShare procfs node path -->
     <string name="node_powershare_mode_switch">/proc/wireless/enable_tx</string>
 

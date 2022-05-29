@@ -29,14 +29,12 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <permission
         android:name="org.lineageos.oneplus.DeviceExtras.touch.TRIGGER_SCREEN_OFF_GESTURE"
         android:protectionLevel="signatureOrSystem" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     <protected-broadcast android:name="org.lineageos.oneplus.DeviceExtras.slider.UPDATE_SLIDER_POSITION" />
     <protected-broadcast android:name="org.lineageos.oneplus.DeviceExtras.slider.UPDATE_SLIDER_SETTINGS" />
     <protected-broadcast android:name="org.lineageos.oneplus.DeviceExtras.touch.UPDATE_SETTINGS" />
@@ -127,22 +125,6 @@
             android:name=".kcal.KcalSettingsActivity"
             android:exported="true"
             android:label="@string/kcal_settings_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <!-- Doze service -->
-        <service
-            android:name=".doze.DozeService"
-            android:permission="OneplusDozeService" />
-
-        <!-- Doze Activity -->
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:exported="true"
-            android:label="@string/ambient_display_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />

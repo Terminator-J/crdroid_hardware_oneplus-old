@@ -106,6 +106,7 @@ public class DeviceExtras extends PreferenceFragment
     public static final String KEY_MIC_GAIN = "microphone_gain";
 
     public static final String KEY_USB2_SWITCH = "usb2_fast_charge";
+    public static final String KEY_USB2_INFO = "usb2_info";
     public static final String KEY_OTG_SWITCH = "otg";
 
     public static final String KEY_VIBSTRENGTH = "vib_strength";
@@ -385,6 +386,7 @@ public class DeviceExtras extends PreferenceFragment
         }
         else {
            findPreference(KEY_USB2_SWITCH).setVisible(false);
+           findPreference(KEY_USB2_INFO).setVisible(false);
         }
 
         // OTG Switch

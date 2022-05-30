@@ -239,6 +239,12 @@
             android:summary="@string/usb2_fc_summary"
             android:title="@string/usb2_fc_title" />
 
+        <Preference
+            android:key="usb2_info"
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/usb2_fc_warning"
+            android:persistent="false" />
+
         <SwitchPreference
             android:key="otg"
             android:summary="@string/otg_summary"

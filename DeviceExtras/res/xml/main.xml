@@ -159,7 +159,7 @@
             android:key="fps_info_text_size"
             android:title="@string/fps_info_text_size_title"
             android:persistent="true"
-            android:max="5"
+            android:max="9"
             android:min="1"
             settings:units=""
             android:defaultValue="3" />

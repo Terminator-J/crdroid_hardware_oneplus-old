@@ -69,9 +69,12 @@ public class FPSInfoService extends Service {
     private static final int POSITION_BOTTOM_LEFT = 3;
     private static final int POSITION_BOTTOM_CENTER = 4;
     private static final int POSITION_BOTTOM_RIGHT = 5;
+    private static final int POSITION_CENTER_LEFT = 6;
+    private static final int POSITION_CENTER_CENTER = 7;
+    private static final int POSITION_CENTER_RIGHT = 8;
 
-    private static final int[] colorArray = {Color.GREEN, Color.RED, Color.BLUE, Color.YELLOW, Color.BLACK};
-    private static final int[] sizeArray = {16, 18, 20, 22, 24};
+    private static final int[] colorArray = {Color.GREEN, Color.RED, Color.MAGENTA, Color.BLUE, Color.CYAN, Color.YELLOW, Color.BLACK, Color.WHITE, Color.GRAY, Color.LTGRAY, Color.DKGRAY};
+    private static final int[] sizeArray = {12, 14, 16, 18, 20, 22, 24, 26, 28};
 
     private IDreamManager mDreamManager;
 
@@ -282,6 +285,15 @@ public class FPSInfoService extends Service {
                 break;
             case POSITION_BOTTOM_RIGHT:
                 params.gravity = Gravity.RIGHT | Gravity.BOTTOM;
+                break;
+            case POSITION_CENTER_LEFT:
+                params.gravity = Gravity.LEFT | Gravity.CENTER;
+                break;
+            case POSITION_CENTER_CENTER:
+                params.gravity = Gravity.CENTER | Gravity.CENTER;
+                break;
+            case POSITION_CENTER_RIGHT:
+                params.gravity = Gravity.RIGHT | Gravity.CENTER;
                 break;
             default:
                 break;
